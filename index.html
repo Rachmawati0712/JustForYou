@@ -1,0 +1,101 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://mulai.likeadream.repl.co/fire.css" rel="stylesheet" type="text/css" /><link href="https://someone.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
+<style>
+.swal2-title{font-size:20px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-container{top:-60px;}
+</style>
+<body>
+<div class="foto">
+<div class="image"><img id="ftKm" src="https://i.postimg.cc/7Y5St8C3/snuggles-caring-1.gif" width="130px" height="130px"/><img id="ftAk" style="opacity:0;position:absolute;" src="https://i.postimg.cc/kG6jCNrG/mimibubu-1.gif" width="130px" height="130px"/></div>
+<span id="sp1"></span><div id="sp2" style="display:none;"><span id="text3"></span></div><div id="sp3" style="display:none;"><span id="text4"></span></div>
+</div>
+
+<div id='Content' style="display:none">
+<div class="pyro" id="fire"><div class="before"></div><div class="after"></div></div>
+<blockquote><p id="text"></p><p id="text2"></p></blockquote>
+</div>
+
+<div id="tombo" class="content2">
+<div id="lopdeg" class="ct1"><label class='lovein' onClick="mulai();nonTo()">&#10084;&#65039;</label></div>
+<p style="opacity:.7;font-size:10px;color:white">Press Button Love</p>
+</div>
+
+<script>
+function play() {
+    var audio = new Audio('song.mp3');
+    audio.play();
+}
+</script>
+
+<script type="text/javascript">
+            document.getElementById("sp1").innerHTML = "Hey You! &#9829;"
+            const swals = Swal.mixin({
+                allowOutsideClick: false,
+            });
+            const swalsy = Swal.mixin({confirmButtonText: 'Yes', allowOutsideClick: false,});
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Enter Your Name',
+                    input: 'text',
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                });
+                if(nama && nama.length < 8){
+                	window.nama = nama;
+                    await swalsy.fire('' + nama + ' do you remember about this day?');
+                    await swalsy.fire(' Ahh I think you are forgot, but its okay');
+                    await swalsy.fire('' + nama + ' I am sorry if I always make you angry');
+                    await swalsy.fire(' But this day I want to say something');
+                    await swalsy.fire(' Something something something');
+                    await swalsy.fire(' Something something');
+                    await swalsy.fire(' Something');
+                    await swalsy.fire(' Eheheh');
+                    await swalsy.fire(' Be patient ' + nama + ' or you will get old quickly ahaha');
+                    await swalsy.fire(' I want to say');
+                    await swalsy.fire(' That today is');
+                    await swalsy.fire(' Today is');
+                    await swalsy.fire(' .........');
+                    await swalsy.fire(' 22-04-2022');
+                    await swalsy.fire(' Do you know something about that date?');
+                    await swalsy.fire(' Yeahh that date is....');
+                    await swalsy.fire(' The date we first met in 2021');
+                    await swalsy.fire(' Eheheh, so I want to say');
+                    await swalsy.fire(' That');
+                    await swalsy.fire(' ........');
+                    await swals.fire('Happy friendship for 1 year, ' + nama + '! &#128155;');
+                    await swals.fire('Now see this');
+                    await swals.fire('Are you ready ' + nama + ' ? eheheh');
+                    await swals.fire('Lets count together');
+                    await swals.fire('One');
+                    await swals.fire('Two');
+                    await swals.fire('Three');
+                    await swals.fire('Yeayyy');
+                    await swals.fire('......');
+                    await swals.fire('...');
+                    await swals.fire('..');
+                    await swals.fire('.');
+                    await swals.fire('Upss haha');
+                    await swals.fire('I am sorry, I am naughty heheh');
+                    await swals.fire('Lets count again');
+                    await swals.fire('1');
+                    await swals.fire('2');
+                    await swals.fire('3');
+                    await swals.fire('Jeng jeng jeng');
+                    await swals.fire('Jeng jeng');
+                    await swals.fire('Jeng....');
+                    document.getElementById("sp1").innerHTML = nama + " &#128155;";
+                    text = "Happy friendship day for 1 year " + nama + "🤍";
+                    text2 = "I didn't think I could be your bestfriend for so long, I'm happy for that. Hopefully we can still be friends no matter what happens in the future. I say thank you very much, because you have taught me many things, even though in your eyes I may be so annoying and childish. But I'm happy to meet you, maybe I often make you angry because of my behavior, but I didn't mean to make you angry and upset, I'm sorry for that. And for today I might make you angry with me, I want to give you a surprise, therefore I want to make you angry first heheh. I'm naughty and I know it. Keep being Pasan for me, Pasan who always teaches me many things and always patient with all my behavior, never get tired and bored with me. Because until whenever I need my Pasan in my life forever♾️. And also when you're angry, don't scream at me because I'm scared eheheh. Thank you for the time and everything you have given me, maybe the word thank you will never be enough but thank you. Sayang Pasan✨";
+                    play();ketik();showDiv();
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 7 karakter, ya!');
+                    mulai();
+                }
+            }
+</script>
+</body>
+</html>
